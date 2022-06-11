@@ -1,15 +1,17 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
 html {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: var(--font);
+  font-family: 'Montserrat', 'Times New Roman', sans-serif;
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.08em;
-
-  // TODO: add color, background-color
+  color: $color-primary;
+  background: $color-background;
 }
 
 // TODO: adaptive body font-size

@@ -1,5 +1,5 @@
-@import './common';
-@import './example';
-@import './base.scss/base';
+@import './utils/variables';
+@import './utils/mixins';
+@import './base.scss/common';
 @import './base.scss/layouts';
 @import './utils/utils';
