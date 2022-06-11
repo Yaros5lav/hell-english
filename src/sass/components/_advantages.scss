@@ -1,0 +1,30 @@
+.advantages {
+  @include media-query(mobile);
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.advantages__list {
+}
+
+.advantages__item {
+}
+
+.advantages__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.65;
+  align-items: center;
+}
+
+.advantages__item::before {
+  content: ' 12 ';
+  //   background-color: red;
+  width: 60px;
+  height: 60px;
+  border: 1px solid $color-accent;
+  background-image: url(../images/problems/campfire.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
