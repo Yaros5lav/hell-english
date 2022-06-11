@@ -19,8 +19,6 @@
 .guarantee__container {
     padding-top: 45px;
     padding-bottom: 45px;
-
-
     @include media-query(tablet) {
         padding: 30px 65px;
         background-color: #F1F1F1;
