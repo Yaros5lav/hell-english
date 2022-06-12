@@ -69,6 +69,10 @@
   line-height: 1.667;
   letter-spacing: 0.08em;
   color: $color-accent;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
 
 .program__two-item-text {
@@ -80,7 +84,6 @@
 
 .program__three-list {
   margin-top: 4px;
-  margin-bottom: 8px;
   color: rgba(185, 185, 185, 50%);
 }
 
