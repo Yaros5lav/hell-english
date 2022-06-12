@@ -1,3 +1,15 @@
-.svg {
-	width: 20px;
+// .svg {
+// 	width: 20px;
+// }
+.logo-svg {
+	background-image: url(../images/group-2.svg);
+	width: 100%;
+	background-size: cover;
+	height: 0;
+	padding: 0;
+	/* reset */
+	padding-bottom: 92%;
+}
+.header__svg-container {
+	width: 14px;
 }
