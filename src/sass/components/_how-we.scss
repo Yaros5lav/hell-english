@@ -15,7 +15,7 @@
   }
 
   @include media-query(desktop) {
-    margin: -15px;
+    margin: 0px;
   }
 }
 
@@ -38,7 +38,7 @@
     }
   }
 
-  @include media-query(tablet) {
+  @include media-query(tablet-only) {
     padding: 35px 32px;
     width: 334px;
 
@@ -47,11 +47,18 @@
   }
 
   @include media-query(desktop) {
+    margin-right: 30px;
+    margin-bottom: 20px;
     padding: 55px 28px;
 
     width: 418px;
-    flex-basis: calc((100% - 6 * 15px) / 3);
-    margin: 15px;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0px;
+    }
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0px;
+    }
   }
 }
 
