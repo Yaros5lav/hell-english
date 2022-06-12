@@ -1,8 +1,4 @@
-.guarantee {
-    @include media-query(desktop) {
-        padding-top: 130px;
-    }
-}
+
 .guarantee__main{
     @media screen and (max-width:767px ){
         background-color: #F1F1F1;
