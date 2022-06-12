@@ -11,7 +11,10 @@ body {
   font-size: 12px;
   letter-spacing: 0.08em;
   color: $color-primary;
-  background: $color-background;
+  background-color: $color-background;
+  @include media-query(desktop) {
+    font-size: 18px;
+  }
 }
 
 // TODO: adaptive body font-size
@@ -25,9 +28,7 @@ p {
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
+
 
 ul {
   list-style: none;
