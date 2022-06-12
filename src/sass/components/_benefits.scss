@@ -1,8 +1,6 @@
 .section__title--benefits {
-  //   color: #ffffff;
+  color: red;
   @include media-query(mobile) {
-    font-weight: 800;
-
     letter-spacing: 0.03em;
     text-align: start;
     max-width: 180px;

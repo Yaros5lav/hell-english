@@ -8,6 +8,12 @@
 }
 
 .advantages__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .advantages__text {
@@ -15,16 +21,19 @@
   font-size: 14px;
   line-height: 1.65;
   align-items: center;
+  margin-left: -5px;
+  background-color: #fff;
 }
 
 .advantages__item::before {
-  content: ' 12 ';
-  //   background-color: red;
+  content: ' ';
+  // background-color: red;
+  padding: 30px;
   width: 60px;
   height: 60px;
   border: 1px solid $color-accent;
-  background-image: url(../images/problems/campfire.svg);
+  background-image: url(../images/advantages/student.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 34px;
   background-position: center;
 }
