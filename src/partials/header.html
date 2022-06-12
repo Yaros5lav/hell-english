@@ -1,3 +1,20 @@
 <header>
-  <div class="container"><include src="./partials/logo.html"></include></div>
+  <div class="container">
+    <include src="./partials/logo.html"></include>
+    <button type="button" class="button header__menu-button" data-menu-button>
+      <svg class="header__svg header__svg--menu" width="21px" height="12px">
+        <use
+          class="header__icon-menu"
+          href="./images/icon-sprite.svg#icon-menu-burger"
+        ></use>
+        <use
+          class="header__icon-cross"
+          href="./images/icon-sprite.svg#iicon-menu-close"
+        ></use>
+      </svg>
+    </button>
+    <svg>
+      <use href="./images/icon-sprite.svg#icon-menu-bur"></use>
+    </svg>
+  </div>
 </header>
