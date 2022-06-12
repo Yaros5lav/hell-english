@@ -17,7 +17,7 @@
   max-width: 243px;
 
   @include media-query(mobile-only) {
-    margin-right: 42px;
+    margin-bottom: 20px;
   }
 
   @include media-query(tablet) {
