@@ -4,7 +4,9 @@
     }
 }
 .guarantee__main{
-    background-color: #F1F1F1;
+    @media screen and (max-width:767px ){
+        background-color: #F1F1F1;
+    }
     @include media-query(tablet){
         width: 768px;
         padding: 0 40px;
@@ -27,6 +29,7 @@
 
     @include media-query(desktop) {
         padding: 50px 112px 45px 112px;
+        
     }
 }
 
