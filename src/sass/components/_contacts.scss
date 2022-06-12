@@ -124,6 +124,9 @@
             line-height: 1.21;
             letter-spacing: 0.08em;
         }
+        @media screen and (max-width: 319px){
+            width: auto;
+        }
 
         @include media-query(tablet) {
             width: 390px;
@@ -167,6 +170,10 @@
             box-shadow: 0px 15px 20px $color-accent;
             color:$color-accent;
             transform: translateY(-7px);
+        }
+        @media screen and (max-width: 319px){
+            width:auto;
+            height: 48px;
         }
 
         @include media-query(tablet) {
