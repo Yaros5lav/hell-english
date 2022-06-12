@@ -1,5 +1,35 @@
+.problem {
+  position: relative;
+
+  background-image: linear-gradient(
+    to bottom,
+    $color-primary,
+    $color-background
+  );
+  @include media-query(mobile) {
+    padding-top: 25px;
+    min-height: 790px;
+  }
+}
+.background {
+  width: 100%;
+  background-color: $color-primary;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    height: 545px;
+  }
+}
+
+.container--problem {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 .section__title--problem {
-  color: red;
+  // color: red;
 
   @include media-query(mobile) {
     font-size: 24px;
@@ -17,8 +47,12 @@
     font-size: 46px;
   }
 }
+.problem__accent {
+  color: $color-accent;
+}
 
 .problem__list {
+  background-color: $color-background;
   counter-reset: section;
   list-style-type: none;
   @include media-query(mobile) {
