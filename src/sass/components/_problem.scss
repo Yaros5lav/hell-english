@@ -1,33 +1,44 @@
-.section__title--benefits {
-  //   color: #ffffff;
-  @include media-query(mobile) {
-    font-weight: 800;
-
-    letter-spacing: 0.03em;
-    text-align: start;
-    max-width: 180px;
-  }
-
-  @include media-query(tablet) {
-    font-size: 26px;
-
-    text-align: center;
-    max-width: 100%;
-  }
-
-  @include media-query(desktop) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+.section__title--problem {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  text-align: start;
+  max-width: 180px;
 }
+
+// .section__title--problem {
+//   color: #ffffff;
+//   @include media-query(mobile) {
+//     font-weight: 800;
+//     font-size: 24px;
+//     line-height: 1.3;
+//     letter-spacing: 0.03em;
+//     text-align: start;
+//     max-width: 180px;
+//   }
+
+//   @include media-query(tablet) {
+//     font-size: 26px;
+
+//     text-align: center;
+//     max-width: 100%;
+//   }
+
+//   @include media-query(desktop) {
+//     position: absolute;
+//     width: 1px;
+//     height: 1px;
+//     margin: -1px;
+//     border: 0;
+//     padding: 0;
+//     white-space: nowrap;
+//     clip-path: inset(100%);
+//     clip: rect(0 0 0 0);
+//     overflow: hidden;
+//   }
+// }
 
 .benefits__list {
   counter-reset: section;
@@ -58,17 +69,12 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.43;
+  }
+  @include media-query(mobile-only) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
-
-  //   @include media-query(mobile-only) {
-
-  //     &:not(:last-child) {
-  //       margin-bottom: 30px;
-  //     }
-  //   }
 
   @include media-query(tablet) {
     width: calc((100% - 2 * 20px) / 2);
