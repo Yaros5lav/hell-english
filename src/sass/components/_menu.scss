@@ -31,6 +31,18 @@
 .header__icon-cross {
 	opacity: 0;
 }
+.header__menu-container {
+	&.is-open {
+		& .menu {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: initial;
+		}
+		& .logo--header {
+			color: $color-background;
+		}
+	}
+}
 .menu {
 	z-index: 2;
 	position: fixed;
@@ -43,10 +55,11 @@
 	visibility: hidden;
 	pointer-events: none;
 	padding: 30px 0px 0px 0px;
-	&.is-open {
-		opacity: 1;
-		visibility: visible;
-		pointer-events: initial;
-	}
 
+}
+.logo--header {
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	left: 20px;
 }

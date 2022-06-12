@@ -1,7 +1,11 @@
 .header__container {
+	position: relative;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 }
 .header {
 	padding-top: 30px;
+}
+.header__logo-container {
+	position: relative;
 }
