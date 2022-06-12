@@ -16,8 +16,8 @@
 .about__thumb1 {
   max-width: 243px;
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 20px;
+  @include media-query(mobile-only) {
+    margin-right: 42px;
   }
 
   @include media-query(tablet) {
