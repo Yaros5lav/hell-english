@@ -1,5 +1,5 @@
-<header>
-  <div class="container">
+<header class="header">
+  <div class="container header__container">
     <include src="./partials/logo.html"></include>
     <button type="button" class="button header__menu-button" data-menu-button>
       <svg class="header__svg header__svg--menu" width="30px" height="30px">
@@ -13,16 +13,18 @@
         ></use>
       </svg>
     </button>
-    <nav class="navigation" data-menu>
-      <ul>
-        <li class="navigation__link">Studying program</li>
-        <li class="navigation__link">About</li>
-        <li class="navigation__link">Training options</li>
-        <li class="navigation__link">Contacts</li>
-      </ul>
-    </nav>
-    <svg>
-      <use href="./images/menu.svg"></use>
-    </svg>
+    <div class="menu" data-menu>
+      <div class="menu__container container">
+        <nav class="navigation">
+          <ul>
+            <li class="navigation__link">Studying program</li>
+            <li class="navigation__link">About</li>
+            <li class="navigation__link">Training options</li>
+            <li class="navigation__link">Contacts</li>
+          </ul>
+        </nav>
+        <button class="header__button"></button>
+      </div>
+    </div>
   </div>
 </header>
