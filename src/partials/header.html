@@ -2,17 +2,25 @@
   <div class="container">
     <include src="./partials/logo.html"></include>
     <button type="button" class="button header__menu-button" data-menu-button>
-      <svg class="header__svg header__svg--menu" width="40px" height="40px">
+      <svg class="header__svg header__svg--menu" width="30px" height="30px">
         <use
-          class="header__icon-menu_40px"
-          href="./images/icon-sprite.svg#icon-logo"
+          class="header__icon-menu"
+          href="./images/icon-sprite.svg#icon-menu_40px"
         ></use>
         <use
           class="header__icon-cross"
-          href="./images/icon-sprite.svg#icon-menu-close"
+          href="./images/icon-sprite.svg#icon-close_40px"
         ></use>
       </svg>
     </button>
+    <nav class="navigation" data-menu>
+      <ul>
+        <li class="navigation__link">Studying program</li>
+        <li class="navigation__link">About</li>
+        <li class="navigation__link">Training options</li>
+        <li class="navigation__link">Contacts</li>
+      </ul>
+    </nav>
     <svg>
       <use href="./images/menu.svg"></use>
     </svg>

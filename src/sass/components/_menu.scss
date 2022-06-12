@@ -1,6 +1,12 @@
 .header__svg {
-	fill: tomato;
+	fill: $color-primary;
 }
 .header__icon-menu {
 	display: block;
+}
+.button {
+	background-color: transparent;
+}
+.navigation {
+
 }
