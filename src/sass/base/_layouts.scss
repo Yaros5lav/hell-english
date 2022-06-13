@@ -17,7 +17,6 @@
     padding-right: 26px;
     width: 1366px;
   }
-  outline: 2px solid tomato;
 }
 
 // TODO: add adaptive container
@@ -50,6 +49,7 @@
 // TODO: add adaptive section__title
 
 .section__subtitle {
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.428;
   @include media-query(desktop) {
