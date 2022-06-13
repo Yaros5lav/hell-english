@@ -31,8 +31,12 @@
 .header__icon-cross {
 	opacity: 0;
 }
-.header__menu-container {
+.header__container {
 	&.is-open {
+		z-index: 20;
+		position: fixed;
+		top: 30px;
+		width: 100%;
 		& .menu {
 			opacity: 1;
 			visibility: visible;
@@ -41,9 +45,18 @@
 		& .logo--header .logo {
 			color: $color-background;
 		}
+		@include media-query(responsive) {
+			max-width: 480px;
+			left: calc((100% - 480px)/2);
+		}
+		& .navigation__link--accent {
+			color: $color-accent;
+		}
 	}
+
 }
 .menu {
+	transition: opacity $transition;
 	z-index: 2;
 	position: fixed;
 	width: 100%;
@@ -63,5 +76,8 @@
 	position: absolute;
 	top: 0;
 	left: 20px;
+}
+.logo--header .logo {
+	transition: color $transition;
 }
 
