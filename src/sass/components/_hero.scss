@@ -1,3 +1,6 @@
+.hero {
+	padding-top: 30px;
+}
 .hero__title {
 	color: $color-primary;
 	margin-bottom: 8px;
@@ -22,6 +25,9 @@
 	}
 }
 .hero__button  {
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 54px;
 	font-weight: 700;
 	font-size: 12px;
 	line-height: 15px;
@@ -30,16 +36,72 @@
 	background-color: $color-accent;
 	text-align: center;
 	padding: 14px 0px;
-	display: inline-block;
+	display: block;
 	width: 100%;
 	max-width: 260px;
+	&:hover,
+	&:focus {
+		-webkit-animation: swing 1s ease;
+		animation: swing 1s ease;
+		-webkit-animation-iteration-count: 1;
+		animation-iteration-count: 1;
+	}
 }
+
+// .hero-img-main {
+
+// 	transform: translateX(50%) $transition;
+// }
+
+// .hero_image-tr {
+// 	transform: translateY(50%) ;
+// 	transition: transform $transition;
+// }
+
+
+@keyframes slideInFromLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-150%);
+	}
+	50% {
+		transform: translateX(-47.2%);
+	}
+	// 99% {
+	// 	opacity: 0.5;
+	// }
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes slideInFromtop {
+	0% {
+		transform: translateY(-150%);
+		opacity: 0;
+	}
+	50% {
+		transform: translateY(-53%);
+	}
+	// 99% {	
+	// 	opacity: 0.5;
+	// }
+	100% {
+		// transform: translateY(-53%);
+		opacity: 1;
+	}
+}
+
 .hero__image-container {
+	margin-left: auto;
+	margin-right: auto;
 	position: relative;
 	width: 74.285794%;
-	height: 178px;
+	// height: 178px;
+	aspect-ratio: 208/178;
+
 }
 .hero-img-main {
+	animation: 1s ease-out 0s 1 slideInFromLeft;
 	width: 85.676923%;
 	position: absolute;
 	height: 100%;
@@ -49,6 +111,7 @@
 	transform: translateX(-47.2%);
 }
 .hero_image-tr {
+	animation: 1s ease-out 0s 1 slideInFromtop;
 	position: relative;
 	width: 100%;
 	top: 50%;

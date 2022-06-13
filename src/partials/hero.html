@@ -10,8 +10,20 @@
     </p>
     <a href="" class="hero__button">I want a free lesson</a>
     <div class="hero__image-container">
-      <img class="hero-img-main" src="./images/hero/hero-main-m.png" alt="" />
       <img
+        srcset="
+          ./images/hero/hero-main-m.png    1x,
+          ./images/hero/hero-main-m@2x.png 2x
+        "
+        class="hero-img-main"
+        src="./images/hero/hero-main-m.png"
+        alt=""
+      />
+      <img
+        srcset="
+          ./images/hero/hero-transp-m.png    1x,
+          ./images/hero/hero-transp-m@2x.png 2x
+        "
         class="hero_image-tr"
         src="./images/hero/hero-transp-m.png"
         alt="office"
