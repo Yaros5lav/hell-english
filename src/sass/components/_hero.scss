@@ -1,4 +1,36 @@
 .hero__title {
 	color: $color-primary;
+	margin-bottom: 8px;
 	
+}
+
+.hero__text {
+	line-height: 1.57;
+	margin-bottom: 50px;
+	&--small,&--large,&--accent {
+		display: block;
+	}
+	&--small {
+		font-weight: 500;
+		color: $color-secondary;
+	}
+	&--large {
+	
+	}
+	&--accent {
+		color: $color-accent;
+	}
+}
+.hero__button  {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: $color-background;
+	background-color: $color-accent;
+	text-align: center;
+	padding: 14px 0px;
+	display: inline-block;
+	width: 100%;
+	max-width: 260px;
 }
