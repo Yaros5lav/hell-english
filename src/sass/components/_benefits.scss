@@ -8,6 +8,7 @@
   }
 
   @include media-query(tablet) {
+    padding-top: 35px;
     background-image: linear-gradient(
       to bottom,
       $color-primary 38%,
@@ -16,12 +17,15 @@
   }
 
   @include media-query(desktop) {
-    background-image: linear-gradient(
-      to bottom,
-      $color-primary 36%,
-      $color-background 0%
-    );
+    position: relative;
+    padding-top: 30px;
+    margin-top: -5px;
   }
+  background-image: linear-gradient(
+    to bottom,
+    $color-primary 36%,
+    $color-background 0%
+  );
 }
 
 .section__title--benefits {
@@ -70,6 +74,8 @@
   }
 
   @include media-query(desktop) {
+    position: relative;
+    z-index: 10;
     padding: 67px 113px;
     gap: 30px 40px;
   }
