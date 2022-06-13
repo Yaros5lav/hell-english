@@ -2,11 +2,41 @@
   position: relative;
   padding-top: 50px;
   background-color: $color-primary;
+
+  @include media-query(tablet) {
+    padding-top: 60px;
+  }
+
+  @include media-query(desktop) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 233px;
+      width: 100%;
+      height: 3px;
+      background-color: $color-background;
+
+      @include media-query(not-desktop) {
+        display: none;
+      }
+    }
+    padding-top: 120px;
+    padding-bottom: 245px;
+  }
 }
 
 .program__title {
   margin-bottom: 34px;
   color: $color-background;
+
+  @include media-query(tablet) {
+    text-align: left;
+    margin-bottom: 95px;
+  }
+
+  // @include media-query(tablet) {
+  //   margin-left: 72px;
+  // }
 }
 
 .program__one-list {
@@ -19,8 +49,46 @@
     bottom: -36px;
     display: block;
     width: 120px;
-    height: 137px;
+    aspect-ratio: 120 / 137;
     background-image: url('../images/program/bg_mob.jpg');
+    background-size: contain;
+
+    @include media-query(retina) {
+      background-image: url('../images/program/bg_mob@2.jpg');
+    }
+
+    @include media-query(tablet) {
+      bottom: 0px;
+      width: 374px;
+      aspect-ratio: 672 / 512;
+      background-image: url('../images/program/bg_tab.jpg');
+
+      @include media-query(retina) {
+        background-image: url('../images/program/bg_tab@2x.jpg');
+      }
+    }
+
+    @include media-query(desktop) {
+      left: 0;
+      bottom: 0px;
+      width: calc(100vw * 0.4);
+      background-image: url('../images/program/bg_desc.jpg');
+
+      @include media-query(retina) {
+        background-image: url('../images/program/bg_desc@2.jpg');
+      }
+    }
+  }
+
+  @include media-query(tablet) {
+    padding-left: 79px;
+    padding-right: 59px;
+  }
+
+  @include media-query(desktop) {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
   }
 }
 
@@ -37,20 +105,55 @@
     background-color: $color-accent;
     border-radius: 50px;
     z-index: 1;
+
+    @include media-query(tablet) {
+      left: -51px;
+    }
+
+    @include media-query(desktop) {
+      width: 16px;
+      height: 16px;
+      top: -50px;
+      left: 0px;
+    }
   }
 
   &:not(:last-child)::after {
     content: '';
+    position: absolute;
     width: 3px;
     top: 10px;
     left: -29px;
     bottom: -10px;
     background-color: #fff;
-    position: absolute;
+
+    @include media-query(tablet) {
+      left: -47px;
+    }
+
+    @include media-query(desktop) {
+      display: none;
+    }
   }
 
   &:not(:last-child) {
     padding-bottom: 45px;
+
+    @include media-query(tablet) {
+      padding-bottom: 36px;
+    }
+    @include media-query(desktop) {
+      margin-right: 46px;
+      padding-bottom: 0;
+    }
+  }
+
+  @include media-query(desktop) {
+    flex-basis: calc((100% - 184px) / 4);
+    // margin-top: 45px;
+    // @include media-query(desktop) {
+    //   margin-right: 46px;
+    // }
   }
 }
 
@@ -59,10 +162,32 @@
   font-weight: 700;
   color: $color-background;
   text-transform: uppercase;
+
+  @include media-query(desktop) {
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+
+.program__one-item-numder {
+  @include media-query(desktop) {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
 }
 
 .program__two-list {
   margin-top: 7px;
+
+  @include media-query(tablet) {
+    display: flex;
+  }
+
+  @include media-query(desktop) {
+    display: block;
+    margin-top: 16px;
+  }
 }
 
 .program__two-item {
@@ -72,6 +197,25 @@
 
   &:not(:last-child) {
     margin-bottom: 8px;
+
+    @include media-query(tablet) {
+      margin-bottom: 0px;
+      margin-right: 50px;
+    }
+
+    @include media-query(desktop) {
+      margin-right: 0px;
+    }
+  }
+
+  @include media-query(tablet) {
+    flex-basis: calc((100% - 100px) / 3);
+  }
+
+  @include media-query(desktop) {
+    &:not(:first-child) {
+      margin-top: 25px;
+    }
   }
 }
 
@@ -80,11 +224,23 @@
   font-weight: 700;
   padding-top: 8px;
   padding-bottom: 6px;
+
+  @include media-query(desktop) {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.65;
+  }
 }
 
 .program__three-list {
   margin-top: 4px;
   color: rgba(185, 185, 185, 50%);
+
+  @include media-query(desktop) {
+    margin-top: 10px;
+  }
 }
 
 .program__two-list .program__two-item:last-child .program__three-list {
@@ -92,6 +248,10 @@
 }
 
 .program__three-item {
-  font-weight: 500;
   line-height: 1.667;
+
+  @include media-query(desktop) {
+    font-size: 18px;
+    line-height: 1.556;
+  }
 }
