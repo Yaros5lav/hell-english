@@ -2,6 +2,9 @@
 	position: relative;
 	display: flex;
 	justify-content: flex-end;
+	@include media-query(desktop) {
+		justify-content: space-between;
+	}
 }
 .header {
 	padding-top: 30px;
@@ -9,22 +12,61 @@
 .header__logo-container {
 	position: relative;
 }
+.navigation__list {
+	@include media-query(desktop) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.navigation__item {
+	@include media-query(tablet) {
+		text-align: center;
+	}
+	&:not(:last-child) {
+		@include media-query(desktop) {
+		margin-right: 40px;
+		}
+	}
+}
 .navigation__link {
 	font-weight: 800;
 	font-size: 20px;
 	line-height: 1.8;
 	color: $color-background;
 	letter-spacing: 0.03em;
+	@include media-query(tablet) {
+		font-size: 26px;
+		
+	}
+	@include media-query(desktop) {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.21;
+		color: $color-secondary;
+	}
 }
 .navigation__link--accent {
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-	color: $color-background;
+	@include media-query(not-desktop) {
+		color: $color-background;
+	}
+	@include media-query (desktop) {
+		color: $color-accent;
+		transition: none;
+	}
 }
 .navigation {
-	margin-bottom: 50px;
+	@include media-query(mobile-only) {
+
+		margin-bottom: 50px;
+	}
+	@include media-query(desktop) {
+		display: flex;
+	}
 }
+
 .header__button {
-	max-width: 260px;
 	padding: 14px 33px;
 	border: 2px solid #FF6B09;
 	font-weight: 700;
@@ -37,10 +79,49 @@
 	background-color: transparent;
 	justify-content: center;
 	align-items: center;
-	margin-left: auto;
-	margin-right: auto;
+	@include media-query(not-desktop) {
+		max-width: 260px;
+	}
+	@include media-query(tablet) {
+		font-size: 14px;
+		padding: 15px 5px;
+	}
+	&--tablet {
+		
+		margin-right: 40px;
+		@include media-query(mobile-only) {
+			display: none;
+			}
+		
+		@include media-query(desktop) {
+			display: none;
+		}
+	}
+	&--mobile {
+		margin-left: auto;
+		margin-right: auto;
+		@include media-query(tablet-only) {
+			display: none;
+		}
+		@include media-query(desktop) {
+			margin-left: 60px;
+			margin-right: 0;
+			padding: 25px 23px 24px 24px;
+			width: 336px;
+		}
+	}
+	&--placeholder {
+		display: none;
+		@include media-query(tablet-only) {
+			display: block;
+			margin-left: auto;
+			// margin-right: calc((100% - 768px + 61px))
+		}
+	}
 }
 .placeholder {
+	padding-right: 101px;
 	display: none;
-	height: 30px;
+	// height: 30px;
+	
 }

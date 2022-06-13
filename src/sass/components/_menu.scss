@@ -11,6 +11,9 @@
 .header__menu-button {
 	position: relative;
 	z-index: 5;
+	@include media-query(desktop) {
+		display: none;
+	}
 	&.is-open {
 		& .header__svg {
 			fill: $color-background;
@@ -37,7 +40,15 @@
 		position: fixed;
 		top: 30px;
 		width: 100%;
-		& .menu {
+		@include media-query(responsive) {
+			max-width: 480px;
+			left: calc((100% - 480px)/2);
+		}
+		@include media-query(tablet) {
+			max-width: 768px;
+			left: calc((100% - 768px)/2)
+		}
+		& .menu , {
 			opacity: 1;
 			visibility: visible;
 			pointer-events: initial;
@@ -45,16 +56,18 @@
 		& .logo--header .logo {
 			color: $color-background;
 		}
-		@include media-query(responsive) {
-			max-width: 480px;
-			left: calc((100% - 480px)/2);
-		}
 		& .navigation__link--accent {
 			color: $color-accent;
 		}
 		& + .placeholder {
 			display: block;
-			height: 30px;
+			@include media-query(mobile-only) {
+				height: 30px;
+			}
+			// height: 30px;
+		}
+		& .header__button--tablet {
+			display: none;
 		}
 	}
 
@@ -72,14 +85,36 @@
 	visibility: hidden;
 	pointer-events: none;
 	padding: 108px 0px 0px 0px;
-	margin-bottom: 50px;
+	@include media-query(desktop) {
+		display: flex;
+		opacity: 1;
+		visibility: visible;
+		pointer-events: initial;
+		position: static;
+		background-image: none;
+		padding: 0;
+		width: 1044px;
+	}
+}
+.menu__container {
+	@include media-query(desktop) {
+		display: flex;
+		justify-content: flex-end;
+		padding: 0;
 
+	}
 }
 .logo--header {
-	z-index: 100;
-	position: absolute;
-	top: 0;
-	left: 20px;
+	@include media-query(not-desktop) {
+		z-index: 100;
+		position: absolute;
+		top: 0;
+		left: 20px;
+	}
+	@include media-query(desktop) {
+		display: flex;
+		align-items: center;
+	}
 }
 .logo--header .logo {
 	transition: color $transition;
