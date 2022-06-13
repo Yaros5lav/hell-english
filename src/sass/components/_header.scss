@@ -9,3 +9,34 @@
 .header__logo-container {
 	position: relative;
 }
+.navigation__link {
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 1.8;
+	color: $color-background;
+	letter-spacing: 0.03em;
+}
+.navigation__link--accent {
+	color: $color-accent;
+}
+.navigation__list {
+	margin-bottom: 50px;
+}
+.header__button {
+	width: 260px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	border: 2px solid #FF6B09;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 1.25;
+	display: flex;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: $color-accent;
+	background-color: transparent;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
