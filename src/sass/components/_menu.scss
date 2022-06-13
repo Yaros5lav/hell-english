@@ -52,6 +52,10 @@
 		& .navigation__link--accent {
 			color: $color-accent;
 		}
+		& + .placeholder {
+			display: block;
+			height: 30px;
+		}
 	}
 
 }
