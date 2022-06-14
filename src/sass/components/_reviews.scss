@@ -53,24 +53,24 @@
 
 .reviews__all-user {
   margin-bottom: 52px;
-  @media screen and (min-width: 768px) {
+
+  @include media-query(tablet) {
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   }
-
-  @media screen and (min-width: 1440px) {
+  @include media-query(desktop) {
     max-width: 1090px;
     display: flex;
   }
 }
 
 .reviews__user {
-  @media screen and (max-width: 767px) {
+  @include media-query(mobile-only) {
     text-align: center;
   }
 }
 
 .reviews__article {
-  @media screen and (min-width: 768px) {
+  @include media-query(tablet) {
     display: flex;
     align-items: center;
 
@@ -86,11 +86,10 @@
   align-items: center;
   margin-bottom: 24px;
 
-  @media screen and (min-width: 768px) {
+  @include media-query(tablet) {
     margin-right: 46px;
   }
-
-  @media screen and (min-width: 1440px) {
+  @include media-query(desktop) {
     margin-right: 40px;
   }
 }
@@ -105,6 +104,8 @@
   font-weight: 800;
   font-size: 14px;
   line-height: 1.21;
+
+  color: $color-accent;
 
   @include media-query(tablet) {
     font-size: 20px;
@@ -121,10 +122,7 @@
   font-size: 12px;
   line-height: 15px;
 
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1440px) {
+  @include media-query(desktop) {
     font-size: 14px;
     line-height: 18px;
   }
@@ -133,7 +131,8 @@
 .reviews__user-photo {
   max-width: 90px;
   margin-bottom: 20px;
-  @media screen and (min-width: 768px) {
+
+  @include media-query(tablet) {
     max-width: 150px;
   }
 }
@@ -142,22 +141,15 @@
   fill: #436eab;
 }
 
-// .reviews__list1 {
-//   display: flex;
-//   justify-content: center;
-//   @media screen and (min-width: 768px) {
-//     display: none;
-//   }
-// }
-
 .reviews__list2 {
   display: flex;
   margin: 0 auto;
 
-  @media screen and (max-width: 767px) {
+  @include media-query(mobile-only) {
     width: 180px;
   }
-  @media screen and (min-width: 768px) {
+
+  @include media-query(tablet) {
     max-width: 558px;
   }
 }
@@ -169,7 +161,7 @@
     margin-right: 10px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include media-query(tablet) {
     &:not(:last-child) {
       margin-right: 30px;
     }
