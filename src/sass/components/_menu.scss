@@ -37,9 +37,9 @@
 .header__container {
 	&.is-open {
 		z-index: 20;
-		position: fixed;
+		// position: fixed;
 		top: 30px;
-		width: 100%;
+		// width: 100%;
 		@include media-query(responsive) {
 			max-width: 480px;
 			left: calc((100% - 480px)/2);
@@ -55,6 +55,17 @@
 		}
 		& .logo--header .logo {
 			color: $color-background;
+			
+			
+		}
+		& .logo--header {
+			@include media-query(tablet-only) {
+				position: fixed;
+				top: 40px;
+				left: calc((100% - 768px + 80px)/2);
+				
+
+			}
 		}
 		// & .navigation__link--accent {
 		// 	color: $color-accent;
@@ -124,4 +135,16 @@
 .logo--header .logo {
 	transition: color $transition;
 }
+@include media-query(mobile) {
 
+}
+
+@include media-query(tablet-only) {
+	.header__container {
+		position: static;
+	}
+	.logo--header {
+		position: static;
+		
+	}
+}
