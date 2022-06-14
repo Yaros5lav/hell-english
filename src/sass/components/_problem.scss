@@ -19,7 +19,7 @@
     background-image: url(../images/problems/campfire.svg),
       linear-gradient(to bottom, $color-primary 70%, $color-background 30%);
     background-repeat: no-repeat;
-    background-position: bottom 68% right 0, center;
+    background-position: bottom 72% right 0, center;
     background-size: 407px 472px, cover;
   }
 }
@@ -76,16 +76,13 @@
     display: flex;
     flex-wrap: wrap;
 
-    // padding: 28px 100px;
-    // margin: -10px -44px;
+    padding: 28px 90px;
+    gap: 20px 88px;
   }
 
   @include media-query(desktop) {
     padding: 52px 93px;
-    margin-left: -20px;
-    margin-right: -20px;
-    margin-top: -15px;
-    margin-bottom: -15px;
+    gap: 30px 40px;
   }
 }
 
@@ -103,18 +100,13 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.43;
-    width: calc((100% - 2 * 88px) / 2);
-    margin: 10px 44px;
+    width: calc((100% - 88px) / 2);
   }
   @include media-query(desktop) {
     font-size: 20px;
     line-height: 1.4;
 
     width: calc((100% - 3 * 40px) / 3);
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
   }
 }
 
