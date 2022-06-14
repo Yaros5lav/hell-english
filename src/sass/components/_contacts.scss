@@ -2,7 +2,6 @@
   padding-top: 55px;
   padding-bottom: 55px;
   text-align: center;
-
   background-image: url('../images/contacts/registration-bgmob.png');
   background-color: #111518;
   background-position: center;
@@ -96,48 +95,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-  }
-
-  &__form-input {
-    margin-bottom: 20px;
-    padding-left: 18px;
-    width: 280px;
-    height: 48px;
-    color: $color-background;
-    background-color: transparent;
-    border: 2px solid $color-background;
-    outline: none;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-
-    &:not(:placeholder-shown):required:invalid {
-      border-color: red;
-    }
-
-    &::placeholder {
-      color: $color-background;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 1.21;
-      letter-spacing: 0.08em;
-    }
-    @media screen and (max-width: 319px) {
-      width: 100%;
-    }
-
-    @include media-query(tablet) {
-      width: 390px;
-      padding-left: 28px;
-    }
-
-    @include media-query(desktop) {
-      width: 478px;
-      height: 70px;
-      padding-left: 40px;
-      margin-bottom: 30px;
     }
   }
 
