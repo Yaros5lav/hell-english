@@ -1,0 +1,83 @@
+.fill-button {
+  display: inline;
+  margin-top: 50px;
+  border: none;
+  min-width: 260px;
+  min-height: 48px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-background;
+  background-color: $color-accent;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+
+  @include media-query(tablet) {
+    min-width: 354px;
+    min-height: 70px;
+    font-weight: 700;
+  }
+
+  @include media-query(desktop) {
+    font-size: 14px;
+    line-height: 1.21;
+    min-width: 354px;
+    min-height: 70px;
+  }
+}
+
+.button-wrapper {
+  display: table;
+
+  &:focus,
+  &:active,
+  &:hover {
+    cursor: pointer;
+
+    & .fill-button {
+      color: $color-accent;
+      background-color: $color-background;
+      box-shadow: 0px 15px 20px $color-accent;
+      transform: translateY(-7px);
+    }
+  }
+}
+
+.modal__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: $color-background;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color $transition;
+
+  @include media-query(tablet) {
+    width: 30px;
+    height: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+
+.modal__button-icon {
+  fill: currentColor;
+}
+
+.modal__fill-button {
+  display: block;
+  margin-top: 0;
+  min-width: 260px;
+  min-height: 48px;
+}
