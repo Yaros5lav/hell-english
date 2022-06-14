@@ -56,9 +56,9 @@
 		& .logo--header .logo {
 			color: $color-background;
 		}
-		& .navigation__link--accent {
-			color: $color-accent;
-		}
+		// & .navigation__link--accent {
+		// 	color: $color-accent;
+		// }
 		& + .placeholder {
 			display: block;
 			@include media-query(mobile-only) {
@@ -105,15 +105,20 @@
 	}
 }
 .logo--header {
-	@include media-query(not-desktop) {
-		z-index: 100;
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 21px;
+	@include media-query(tablet) {
 		position: absolute;
-		top: 0;
-		left: 20px;
+		top: 1.5px;
+		left: 41px;
 	}
 	@include media-query(desktop) {
+		position: static;
 		display: flex;
 		align-items: center;
+		// top: 12px;
 	}
 }
 .logo--header .logo {
