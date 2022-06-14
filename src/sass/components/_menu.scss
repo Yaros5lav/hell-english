@@ -17,13 +17,16 @@
 		position: fixed;
 		@include media-query(mobile) {
 			top: 30px;
-			right: calc((100% - 320px + 40px)/2);
+			right: 20px;
 		}
-		
-		
-			// top: 40px;
-			// right: calc((100% - 768px + 80) / 2);
-	
+		@include media-query(responsive) {	
+			right: calc((100% - 480px + 40px)/2);
+		}
+		@include media-query(tablet) {
+			right: calc((100% - 688px) / 2);
+			top: 40px;
+		}
+
 		& .header__svg {
 			fill: $color-background;
 		}
@@ -159,4 +162,3 @@
 .logo--header .logo {
 	transition: color $transition;
 }
-
