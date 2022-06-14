@@ -3,30 +3,23 @@ $('.slider-for').slick({
   slidesToScroll: 1,
   arrows: false,
   infinite: false,
-  adaptiveHeight: true,
-  asNavFor: '.slider-nav'
+  asNavFor: '.slider-nav',
 });
 $('.slider-nav').slick({
-  slidesToShow: 7,
+  slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.slider-for',
   infinite: false,
   arrows: false,
   dots: false,
   focusOnSelect: true,
-  responsive: [{
-
-    breakpoint: 768,
-    settings: {
-      slidesToShow: 3,
-      slidesToScroll: 1
-    }
-
-  }, {
-
-    breakpoint: 300,
-    slidesToShow: 3,
-    slidesToScroll: 1
-
-  }]
+  mobileFirst: true,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 7,
+      },
+    },
+  ],
 });

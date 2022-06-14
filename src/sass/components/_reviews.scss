@@ -1,15 +1,19 @@
-.reviews .container {
-  outline: 2px solid blueviolet;
-}
-
 .reviews__title {
-  text-align: center;
-  margin-bottom: 24px;
+  color: $color-primary;
+  margin-bottom: 25px;
+
+  @include media-query(tablet) {
+    margin-bottom: 30px;
+  }
+  @include media-query(desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .reviews__group {
   position: relative;
-  @media screen and (min-width: 1440px) {
+
+  @include media-query(desktop) {
     display: flex;
     justify-content: center;
   }
@@ -28,7 +32,7 @@
   left: 0;
   bottom: 10px;
 
-  @media screen and (min-width: 768px) {
+  @include media-query(tablet) {
     left: -15px;
     bottom: 50%;
   }
@@ -37,20 +41,15 @@
 .reviews__button-right {
   right: 0;
   bottom: 10px;
-
-  @media screen and (min-width: 768px) {
+  @include media-query(tablet) {
     right: -15px;
     bottom: 50%;
   }
 }
 
 .reviews__button-icon {
-  fill: orange;
+  fill: $color-accent;
 }
-
-// .reviews__user-group {
-
-// }
 
 .reviews__all-user {
   margin-bottom: 52px;
@@ -102,6 +101,19 @@
 
 .reviews__name {
   margin-bottom: 20px;
+
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.21;
+
+  @include media-query(tablet) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  @include media-query(desktop) {
+    font-size: 30px;
+    line-height: 1.23;
+  }
 }
 
 .rewiews__education {
