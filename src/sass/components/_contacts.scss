@@ -97,14 +97,4 @@
       align-items: center;
     }
   }
-
-  &__form-button {
-    @include media-query(tablet) {
-      margin-top: 30px;
-    }
-
-    @include media-query(tablet) {
-      margin-top: 80px;
-    }
-  }
 }
