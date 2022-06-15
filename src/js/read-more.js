@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 $('#showr1').click(function () {
   $('.reviews__fake-text').show('slow');
   $('.reviews__dots').hide('slow');
