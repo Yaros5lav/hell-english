@@ -5,6 +5,7 @@
 		padding-top: 70px;
 	}
 	@include media-query(desktop) {
+		position: relative;
 		padding-top: 85px;
 		padding-bottom: 372px;
 	}
@@ -32,6 +33,8 @@
 .hero__container {
 	@include media-query(tablet) {
 		display: flex;
+	}
+	@include media-query(tablet-only) {
 		position: relative;
 	}
 }
@@ -157,10 +160,10 @@
 		right: 18px;
 	}
 	@include media-query(desktop) {
-		width: 842px;
+		width: 50.11905%;
 		aspect-ratio: 842/718;
-		right: -6%;
-		top: -55px;
+		right: 4.46%;
+		top: 30px;
 	}
 
 }
