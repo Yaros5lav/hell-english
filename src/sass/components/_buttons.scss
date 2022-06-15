@@ -16,12 +16,13 @@
     background-color $transition, box-shadow $transition;
 
   @include media-query(tablet) {
-    min-width: 354px;
-    min-height: 70px;
+   
     font-weight: 700;
   }
 
   @include media-query(desktop) {
+     min-width: 354px;
+    min-height: 70px;
     font-size: 14px;
     line-height: 1.21;
     min-width: 354px;
