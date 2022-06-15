@@ -18,7 +18,7 @@
       <input
         type="text"
         name="client-name"
-        class="contacts__form-input"
+        class="form__input contacts__form-input"
         pattern="^[A-Za-zА\s]+$"
         placeholder="Name*"
         required=""
@@ -26,14 +26,16 @@
       <input
         type="tel"
         name="client-tel"
-        class="contacts__form-input"
+        class="form__input contacts__form-input"
         placeholder="Phone*"
         pattern="[0-9]{1,}"
         required=""
       />
-      <button type="submit" class="contacts__form-button">
-        i want a free lesson
-      </button>
+      <div class="button-transform">
+        <button type="submit" class="fill-button contacts__form-button">
+          I want a free lesson
+        </button>
+      </div>
     </form>
   </div>
 </section>
