@@ -5,6 +5,7 @@
 	}
 	@include media-query(desktop) {
 		padding-top: 85px;
+		padding-bottom: 372px;
 	}
 }
 .hero__main {
@@ -83,6 +84,7 @@
 		margin-left: 0;
 	}
 	@include media-query(desktop) {
+		margin: 0;
 		width: 354px;
 		font-size: 14px;
 		padding: 26px 0px;
