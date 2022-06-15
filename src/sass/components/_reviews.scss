@@ -199,18 +199,25 @@
 .reviews__fake-read {
   border: none;
   background-color: transparent;
+
+  text-decoration: underline;
+  color: $color-accent;
 }
 
 .reviews__fake-hide {
   border: none;
   background-color: transparent;
   display: none;
+
+  text-decoration: underline;
+  color: $color-accent;
 }
 
-.reviews__fake-link {
-  color: $color-accent;
-  text-decoration: underline;
-}
+// .reviews__fake-link {
+//   color: $color-accent;
+//   text-decoration: underline;
+// }
+
 .reviews__icon {
   fill: #436eab;
 }
