@@ -1,34 +1,35 @@
 
 .guarantee .container{
     @media screen and (max-width:767px ){
-        background-color: #F1F1F1;
     }
     @include media-query(tablet){
         width: 768px;
         padding: 0 40px;
-        background-color: none;
     }
         @include media-query(desktop){
             width: 1366px; 
             padding: 0 26px;
-            background-color: none;
         }
 }
-.guarantee__container {
+
+    
+.guarantee__list{
+    background-color: #F1F1F1;
     padding-top: 45px;
     padding-bottom: 45px;
-
-    @include media-query(tablet) {
-        padding: 30px 65px;
-        background-color: #F1F1F1;
-    }
-
-    @include media-query(desktop) {
-        padding: 50px 112px 45px 112px;
-        
-    }
+    margin: 0 -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+        @include media-query(tablet) {
+            padding: 30px 65px;
+        }
+    
+        @include media-query(desktop) {
+            padding: 50px 112px 45px 112px;
+    
+        }
 }
-
 .guarantee__title {
     text-align: center;
     margin-bottom: 30px;
