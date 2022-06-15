@@ -49,6 +49,7 @@
 // TODO: add adaptive section__title
 
 .section__subtitle {
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.428;
   @include media-query(desktop) {
