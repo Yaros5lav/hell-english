@@ -1,6 +1,5 @@
 .fill-button {
   display: inline;
-  margin-top: 50px;
   border: none;
   min-width: 260px;
   min-height: 48px;
@@ -16,12 +15,11 @@
     background-color $transition, box-shadow $transition;
 
   @include media-query(tablet) {
-   
     font-weight: 700;
   }
 
   @include media-query(desktop) {
-     min-width: 354px;
+    min-width: 354px;
     min-height: 70px;
     font-size: 14px;
     line-height: 1.21;

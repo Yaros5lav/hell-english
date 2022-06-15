@@ -24,7 +24,15 @@
   border: 2px solid $color-background;
 
   &:last-of-type {
-    margin-bottom: 0;
+    margin-bottom: 50px;
+
+    @include media-query(tablet) {
+      margin-bottom: 30px;
+    }
+
+    @include media-query(desktop) {
+      margin-bottom: 80px;
+    }
   }
 
   &::placeholder {
@@ -42,7 +50,6 @@
   @media screen and (max-width: 319px) {
     width: 100%;
   }
-
   @include media-query(tablet) {
     width: 390px;
     padding-left: 28px;
