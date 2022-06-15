@@ -1,0 +1,33 @@
+#scrollToTop {
+    position: fixed;
+    bottom: 3rem;
+    background-color:rgba(252, 72, 1, .7) ;
+    right: 3rem;
+    box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    width: 80px;
+    color: white;
+    height: 80px;
+    display: flex;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -12rem;
+    transition: margin-bottom 0.2s;
+    &.active {
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        animation-name: rotate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(2520deg);
+    }
+}
