@@ -1,6 +1,7 @@
 .hero {
 	padding-top: 30px;
 	@include media-query(tablet){
+		padding-bottom: 139px;
 		padding-top: 70px;
 	}
 	@include media-query(desktop) {
@@ -80,11 +81,11 @@
 		max-width: 260px;
 	}
 	@include media-query(tablet) {
+		margin: 0;
 		margin-right: 0;
 		margin-left: 0;
 	}
 	@include media-query(desktop) {
-		margin: 0;
 		width: 354px;
 		font-size: 14px;
 		padding: 26px 0px;
