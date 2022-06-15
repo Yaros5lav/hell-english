@@ -3,6 +3,17 @@
   background-color: transparent;
   outline: transparent;
   transition: border $transition;
+  &::placeholder {
+      color: $color-background;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.21;
+      letter-spacing: 0.08em;
+    }
+  
+    &:not(:placeholder-shown):required:invalid {
+      border-color: #ff0000;
+    }
 }
 
 .contacts__form-input {

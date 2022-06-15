@@ -1,5 +1,5 @@
 
-.guarantee__main{
+.guarantee .container{
     @media screen and (max-width:767px ){
         background-color: #F1F1F1;
     }
@@ -9,8 +9,8 @@
         background-color: none;
     }
         @include media-query(desktop){
-            width: 1440px;
-            padding: 0 183px;
+            width: 1366px; 
+            padding: 0 26px;
             background-color: none;
         }
 }
