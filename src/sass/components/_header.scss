@@ -98,9 +98,9 @@
 		width: 260px;
 		font-size: 14px;
 		padding: 13px 5px 14px 5px;
+		margin-right: 40px;
 	}
 
-	margin-right: 40px;
 	@include media-query(mobile-only) {
 		display: none;
 	}
