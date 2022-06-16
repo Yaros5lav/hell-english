@@ -71,7 +71,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 40px 98px;
-    margin: -10px;
+    gap: 20px;
   }
 
   @include media-query(desktop) {
@@ -93,9 +93,7 @@
   }
 
   @include media-query(tablet) {
-    width: calc((100% - 2 * 20px) / 2);
-    margin: 10px;
-
+    width: calc((100% - 20px) / 2);
     line-height: 1.71;
   }
 
