@@ -14,8 +14,7 @@
   position: relative;
 
   @include media-query(desktop) {
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
   }
 }
 
@@ -25,20 +24,24 @@
   background-color: transparent;
   margin: 0;
   padding: 0;
-  width: 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .reviews__button-left {
-  left: 0;
-  bottom: 15px;
+  left: 5px;
+  bottom: 10px;
 
   @include media-query(responsive) {
-    left: 20%;
-    bottom: 15px;
+    left: 90px;
+    bottom: 5px;
   }
 
   @include media-query(tablet) {
-    left: -15px;
+    left: -20px;
     bottom: 50%;
   }
   @include media-query(desktop) {
@@ -48,16 +51,16 @@
 }
 
 .reviews__button-right {
-  right: 0;
-  bottom: 15px;
+  right: 5px;
+  bottom: 10px;
 
   @include media-query(responsive) {
-    right: 23%;
-    bottom: 15px;
+    right: 90px;
+    bottom: 5px;
   }
 
   @include media-query(tablet) {
-    right: -15px;
+    right: -20px;
     bottom: 50%;
   }
 
@@ -72,9 +75,10 @@
 }
 
 .reviews__all-user {
-  margin-bottom: 52px;
+  margin-bottom: 37px;
 
   @include media-query(tablet) {
+    margin-bottom: 40px;
     padding: 40px;
 
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
@@ -85,8 +89,9 @@
     padding-bottom: 51px;
     padding-left: 82px;
 
-    max-width: 1090px;
-    display: flex;
+    width: 1090px;
+    margin: 0 auto;
+    margin-bottom: 52px;
   }
 }
 
@@ -164,13 +169,13 @@
   margin-bottom: 20px;
   font-size: 12px;
   line-height: 1.25;
-  max-width: 484px;
 
   color: $color-secondary;
 
   @include media-query(desktop) {
     font-size: 14px;
     line-height: 1.28;
+    width: 484px;
   }
 }
 
@@ -213,32 +218,25 @@
   color: $color-accent;
 }
 
-// .reviews__fake-link {
-//   color: $color-accent;
-//   text-decoration: underline;
-// }
-
 .reviews__icon {
   fill: #436eab;
 }
 
 .reviews__list2 {
-  display: flex;
+  // display: flex;
   margin: 0 auto;
 
   @include media-query(mobile-only) {
-    width: 155px;
+    width: 189px;
   }
 
   @include media-query(tablet) {
-    max-width: 535px;
+    width: 590px;
   }
 }
 
 .reviews__item {
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
+  margin: 0 5px;
 
   &.slick-current.slick-active {
     outline: 2px solid $color-accent;
@@ -247,12 +245,11 @@
   }
 
   @include media-query(tablet) {
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    margin: 0 15px;
   }
 }
 
 .reviews__photo {
+  max-width: none;
   width: 54px;
 }
