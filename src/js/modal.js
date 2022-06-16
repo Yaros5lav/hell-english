@@ -13,3 +13,10 @@ const toggleModal = function () {
 closeButton.addEventListener('click', toggleModal);
 modalOverlay.addEventListener('click', toggleModal);
 openButton.addEventListener('click', toggleModal);
+
+// const LinkHeaderMenu = document.querySelectorAll('.navigation__link');
+// LinkHeaderMenu.addEventListener('click', toggleModal);
+
+// const toggleBurger = function () {
+//   LinkHeaderMenu.classList.toggle('')
+// }
