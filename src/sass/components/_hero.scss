@@ -1,14 +1,14 @@
 .hero {
-  padding-top: 30px;
-  @include media-query(tablet) {
-    padding-bottom: 139px;
-    padding-top: 70px;
-  }
-  @include media-query(desktop) {
-    position: relative;
-    padding-top: 85px;
-    padding-bottom: 372px;
-  }
+	padding-top: 30px;
+	@include media-query(tablet){
+		padding-bottom: 139px;
+		padding-top: 70px;
+	}
+	@include media-query(desktop) {
+		padding-top: 85px;
+		padding-bottom: 372px;
+		overflow: hidden;
+	}
 }
 .hero__main {
   @include media-query(tablet) {
@@ -29,12 +29,11 @@
   }
 }
 .hero__container {
-  @include media-query(tablet) {
-    display: flex;
-  }
-  @include media-query(tablet-only) {
-    position: relative;
-  }
+	@include media-query(tablet) {
+		display: flex;
+		position: relative;
+	}
+
 }
 .hero__text {
   line-height: 1.57;
@@ -138,24 +137,25 @@
 }
 
 .hero__image-container {
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  width: 74.285794%;
-  // height: 178px;
-  aspect-ratio: 208/178;
-  @include media-query(tablet) {
-    position: absolute;
-    width: 370px;
-    aspect-ratio: 370/315;
-    right: 18px;
-  }
-  @include media-query(desktop) {
-    width: 50.11905%;
-    aspect-ratio: 842/718;
-    right: 4.46%;
-    top: 30px;
-  }
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 74.285794%;
+	// height: 178px;
+	aspect-ratio: 208/178;
+	@include media-query(tablet) {
+		position: absolute;
+		width: 370px;
+		aspect-ratio: 370/315;
+		right: 18px;
+	}
+	@include media-query(desktop) {
+		width: 842px;
+		aspect-ratio: 842/718;
+		right: -82px;
+		top: -55px;
+	}
+
 }
 .hero-img-main {
   animation: 1s ease-out 0s 1 slideInFromLeft;
