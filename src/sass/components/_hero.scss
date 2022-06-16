@@ -67,7 +67,6 @@
 .hero__button {
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 54px;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.6;
@@ -143,6 +142,9 @@
 	width: 74.285794%;
 	// height: 178px;
 	aspect-ratio: 208/178;
+  @include media-query(mobile-only) {
+    margin-top: 54px;
+  }
 	@include media-query(tablet) {
 		position: absolute;
 		width: 370px;
