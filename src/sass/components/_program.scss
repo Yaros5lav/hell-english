@@ -133,6 +133,7 @@
     content: '';
     position: absolute;
     width: 3px;
+    height: calc(100% + 40px);
     top: 10px;
     left: -29px;
     bottom: -10px;
@@ -140,6 +141,7 @@
 
     @include media-query(tablet) {
       left: -47px;
+      height: calc(100% + 30px);
     }
 
     @include media-query(desktop) {
@@ -148,14 +150,13 @@
   }
 
   &:not(:last-child) {
-    padding-bottom: 45px;
+    margin-bottom: 40px;
 
     @include media-query(tablet) {
-      padding-bottom: 36px;
+      margin-bottom: 30px;
     }
     @include media-query(desktop) {
       margin-right: 46px;
-      padding-bottom: 0;
     }
   }
 
