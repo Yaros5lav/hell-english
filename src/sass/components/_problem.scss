@@ -1,4 +1,5 @@
 .problem {
+  padding-top: 25px;
   @include media-query(mobile) {
     background-image: linear-gradient(
       to bottom,
@@ -8,6 +9,7 @@
   }
 
   @include media-query(tablet) {
+    padding-top: 55px;
     background-image: linear-gradient(
       to bottom,
       $color-primary 60%,
@@ -16,25 +18,12 @@
   }
 
   @include media-query(desktop) {
+    padding-top: 100px;
     background-image: url(../images/problems/campfire.svg),
       linear-gradient(to bottom, $color-primary 70%, $color-background 30%);
     background-repeat: no-repeat;
     background-position: bottom 72% right 0, center;
     background-size: 407px 472px, cover;
-  }
-}
-
-.container--problem {
-  padding-top: 25px;
-  @media screen and (max-width: 767px) {
-  }
-  @include media-query(tablet) {
-    padding-top: 55px;
-  }
-
-  @include media-query(desktop) {
-    padding-top: 100px;
-    z-index: 10;
   }
 }
 
@@ -81,7 +70,7 @@
   }
 
   @include media-query(desktop) {
-    padding: 52px 93px;
+    padding: 67px 113px;
     gap: 30px 40px;
   }
 }
