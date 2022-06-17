@@ -1,2 +1,0 @@
-var body=document.querySelector("body"),modal=document.querySelector("#modal"),modalOverlay=document.querySelector("#modal-overlay"),closeButton=document.querySelector("#close-button"),openButton=document.querySelector("#open-button"),toggleModal=function(){modal.classList.toggle("closed"),modalOverlay.classList.toggle("closed"),body.classList.toggle("overflow-hidden")};closeButton.addEventListener("click",toggleModal),modalOverlay.addEventListener("click",toggleModal),openButton.addEventListener("click",toggleModal);
-//# sourceMappingURL=index.2e2824d3.js.map

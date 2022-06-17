@@ -1,2 +1,0 @@
-$(".slider-for").slick({slidesToShow:1,slidesToScroll:1,dots:!1,infinite:!1,asNavFor:".slider-nav",mobileFirst:!0,prevArrow:$("[data-slick-left]"),nextArrow:$("[data-slick-right]")}),$(".slider-nav").slick({slidesToShow:3,slidesToScroll:1,asNavFor:".slider-for",infinite:!1,arrows:!1,dots:!1,focusOnSelect:!0,mobileFirst:!0,responsive:[{breakpoint:767,settings:{slidesToShow:7,slidesToScroll:7}}]});
-//# sourceMappingURL=index.3266bdc5.js.map
