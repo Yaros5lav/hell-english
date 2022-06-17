@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 $('#showr1').click(function () {
   $('.reviews__fake-text').slideToggle('2000');
   $('.reviews__dots').slideToggle('2000');
