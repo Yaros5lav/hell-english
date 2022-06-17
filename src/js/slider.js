@@ -1,3 +1,6 @@
+import $ from 'jquery';
+import slick from 'slick-carousel';
+
 $('.slider-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
