@@ -16,9 +16,11 @@
 
   linkHeaderMenuList.forEach(link => {
     link.addEventListener('click', () => {
-      mobileMenuRef.classList.toggle('is-open');
-      body.classList.toggle('overflow-hidden');
-      menuBtnRef.classList.toggle('is-open');
+      if (window.innerWidth < 1440) {
+        mobileMenuRef.classList.toggle('is-open');
+        body.classList.toggle('overflow-hidden');
+        menuBtnRef.classList.toggle('is-open');
+      }
     });
   });
 })();
